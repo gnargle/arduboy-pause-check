@@ -17,11 +17,11 @@ bool check_pause(Arduboy arduboy, bool isPaused){
     if (pause_countdown <= 0){
       if (isPaused == false){
         isPaused = true;
-        pause_countdown = 30;
+        pause_countdown = pause_countdown_set_val;
       }
       else{
         isPaused = false;
-        pause_countdown = 30;
+        pause_countdown = pause_countdown_set_val;
       }
     }
   }
